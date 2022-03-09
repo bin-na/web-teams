@@ -4,6 +4,7 @@ import { Layout } from 'components/layout';
 import { Team } from 'components/team/team';
 import { User } from 'components/team/interface';
 import { getUsers } from 'components/team/fetcher';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const TeamPage: NextPage = () => {
   const [users, setUsers] = React.useState<User[]>([]);
@@ -16,10 +17,12 @@ const TeamPage: NextPage = () => {
   }, []);
 
   return (
-    <Layout title="WEB Teams">
-      <Team users={users} />
-      
-    </Layout>
+    <div className="bg">
+      <Layout title="WEB Teams">
+        <h1 className="hi-team text-center">Meet The Team</h1>
+        <Team users={users} />
+      </Layout>
+    </div>
   );
 };
 

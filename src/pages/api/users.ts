@@ -17,6 +17,24 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
       },
+      {
+        id: 'binh_na',
+        name: 'Binh NA',
+        description: 'Bình thích màu hồng nhưng hem pê tê',
+        old: 25,
+      },
+      {
+        id: 'binh_na',
+        name: 'Binh NA',
+        description: 'Bình thích màu hồng nhưng hem pê tê',
+        old: 25,
+      },
+      {
+        id: 'binh_na',
+        name: 'Binh NA',
+        description: 'Bình thích màu hồng nhưng hem pê tê',
+        old: 25,
+      },
     ];
     res.status(200).json({
       success: true,

@@ -2,6 +2,7 @@ import React from 'react';
 import { User } from './interface';
 import Css from './team.module.scss';
 import { Card } from './card';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export interface Props {
   users: User[];
@@ -9,8 +10,14 @@ export interface Props {
 
 export const Team = (props: Props): React.ReactElement => (
   <div className={Css.container}>
-    {props.users.map((item) => (
-      <Card key={item.id} user={item} />
-    ))}
+    <Container fluid className="container">
+      <Row md={2}>
+        {props.users.map((item) => (
+          <Col>
+            <Card key={item.id} user={item} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   </div>
 );
