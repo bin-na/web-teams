@@ -18,6 +18,7 @@ const TeamPage: NextPage = () => {
   return (
     <Layout title="WEB Teams">
       <Team users={users} />
+      
     </Layout>
   );
 };
