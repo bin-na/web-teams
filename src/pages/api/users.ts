@@ -6,6 +6,7 @@ type Data = {
   name: string;
   old: number;
   description: string;
+  meme: string,
 };
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Response<Data[]>>) {
@@ -16,24 +17,28 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         name: 'Binh NA',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
+        meme: "meme/meme1.png",
+      },
+      {
+        id: 'binh_na',
+        name: 'Binh NA',
+        description: 'Bình thích màu hồng và pê tê',
+        old: 25,
+        meme: "meme/meme2.png",
       },
       {
         id: 'binh_na',
         name: 'Binh NA',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
+        meme: "meme/meme3.png",
       },
       {
         id: 'binh_na',
         name: 'Binh NA',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
-      },
-      {
-        id: 'binh_na',
-        name: 'Binh NA',
-        description: 'Bình thích màu hồng nhưng hem pê tê',
-        old: 25,
+        meme: "meme/meme4.png",
       },
     ];
     res.status(200).json({

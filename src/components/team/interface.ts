@@ -3,4 +3,5 @@ export interface User {
   name: string;
   old: number;
   description: string;
+  meme: string;
 }

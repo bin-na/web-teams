@@ -32,10 +32,55 @@ a {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   background-color: rgb(179, 191, 202);
 }
 
 .boundary-card {
   padding: 13px 0px;
+  width: 90%;
+}
+
+.outside-content {
+  display: flex;
+}
+
+.ani1 {
+  animation: ani1 6s infinite;
+}
+
+@keyframes ani1 {
+  0% {
+    transform: translate(400px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(400px, 0px);
+  }
+}
+
+.ani2 {
+  animation: ani2 6s infinite;
+}
+
+@keyframes ani2 {
+  0% {
+    transform: translate(-400px, 0px);
+  }
+  50% {
+    transform: translate(200px, 0px);
+  }
+  100% {
+    transform: translate(-400px, 0px);
+  }
+}
+
+.ani1:hover {
+  animation-play-state: paused;
+}
+
+.ani2:hover {
+  animation-play-state: paused;
 }
