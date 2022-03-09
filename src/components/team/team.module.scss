@@ -1,0 +1,25 @@
+$base-color: gray;
+$highlight-color: deeppink;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: $base-color;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: 18px;
+    }
+
+    .old {
+      color: $highlight-color;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+}
