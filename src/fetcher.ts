@@ -1,6 +1,6 @@
 import { Response } from 'interfaces/response';
 
-export const get = async <T>(url: string, param?: any): Promise<Response<T>> => {
+export const get = async <T>(url: string, param?: RequestInit): Promise<Response<T>> => {
   try {
     const res = await fetch(url, param);
 
@@ -14,11 +14,11 @@ export const get = async <T>(url: string, param?: any): Promise<Response<T>> => 
       data: null,
       message: 'server error!',
     };
-  } catch (err: any) {
+  } catch (err: unknown) {
     return {
       success: false,
       data: null,
-      message: err.message,
+      message: (err as Error).message,
     };
   }
 };
