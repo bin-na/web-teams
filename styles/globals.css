@@ -84,3 +84,9 @@ a {
 .ani2:hover {
   animation-play-state: paused;
 }
+
+.phone {
+  z-index: 3;
+  position: absolute;
+  margin-left: 80px;
+}

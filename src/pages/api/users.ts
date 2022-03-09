@@ -4,9 +4,11 @@ import { Response } from '../../interfaces/response';
 type Data = {
   id: string;
   name: string;
+  role: string;
   old: number;
   description: string;
   meme: string,
+  phone: string
 };
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Response<Data[]>>) {
@@ -14,31 +16,40 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
     const data: Data[] = [
       {
         id: 'binh_na',
-        name: 'Binh NA',
-        description: 'Bình thích màu hồng nhưng hem pê tê',
-        old: 25,
-        meme: "meme/meme1.png",
-      },
-      {
-        id: 'binh_na',
-        name: 'Binh NA',
+        name: 'Nguyễn An Bình',
+        role: 'Frontend Developer',
         description: 'Bình thích màu hồng và pê tê',
         old: 25,
         meme: "meme/meme2.png",
+        phone: '0984707504'
       },
       {
         id: 'binh_na',
-        name: 'Binh NA',
+        name: 'Nguyễn Ngọc Long',
+        role: 'Frontend Internship',
+        description: 'Bình thích màu hồng nhưng hem pê tê',
+        old: 25,
+        meme: "meme/meme1.png",
+        phone: '0984707504'
+      },
+      
+      {
+        id: 'binh_na',
+        name: 'Trương Thị Phương',
+        role: 'Frontend Internship',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
         meme: "meme/meme3.png",
+        phone: '0984707504'
       },
       {
         id: 'binh_na',
-        name: 'Binh NA',
+        name: 'Hoàng Trung Nam',
+        role: 'Frontend Internship',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
         meme: "meme/meme4.png",
+        phone: '0984707504'
       },
     ];
     res.status(200).json({
