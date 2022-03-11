@@ -2,6 +2,7 @@ import React from 'react';
 import { User } from './interface';
 import styles from './cardGroup.module.scss';
 import { Card } from './card';
+
 export interface Props {
   users: User[];
 }
