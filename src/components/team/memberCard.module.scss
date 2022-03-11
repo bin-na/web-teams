@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,200&display=swap');
+
+$purple: rgb(53, 27, 82);
+$grey-color: rgb(161, 161, 161);
+$white-color: #fff;
+$white-grey-color: rgb(228, 228, 228);
+
+.wrapper {
+  font-family: 'Montserrat', sans-serif;
+  width: calc((100% * 2) / 3);
+  height: 320px;
+  overflow: hidden;
+  background-color: $white-color;
+  box-shadow: 1px 3px 5px 0px $white-grey-color;
+  padding: 20px;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.runAnimation {
+  position: relative;
+  left: 0%;
+}
+.initAnimation {
+  position: relative;
+  left: 120%;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgBox {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.infoBox {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+
+  * {
+    margin-bottom: 20px;
+  }
+}
+.name {
+  color: $purple;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.role {
+  color: $grey-color;
+}
+.iconGroup {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.iconGroup > * {
+  margin-right: 10px;
+}
+.iconGroup {
+  .icon {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1024px) {
+  .wrapper {
+    height: auto;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+    width: 100%;
+  }
+  .cardContainer {
+    flex-direction: column;
+  }
+  .infoBox {
+    .role,
+    .name {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .iconGroup {
+    justify-content: center;
+  }
+}

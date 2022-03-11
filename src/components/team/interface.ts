@@ -1,6 +1,10 @@
 export interface User {
-  id: string;
   name: string;
-  old: number;
+  img: string;
+  icon: string;
+  date_of_birth: string;
+  gender: string;
+  address: string;
+  role: string;
   description: string;
 }

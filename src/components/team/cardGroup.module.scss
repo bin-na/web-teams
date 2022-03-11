@@ -1,0 +1,35 @@
+.cardGroup {
+}
+.cardGroup > * {
+  position: relative;
+  margin: 30px 0px;
+}
+.cardElement {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cardElement > *:nth-child(1) {
+  width: calc(100% / 3);
+  text-align: center;
+}
+.cardElement:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1024px) {
+  .cardElement > *:nth-child(1) {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cardElement .iconBackground {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+}
