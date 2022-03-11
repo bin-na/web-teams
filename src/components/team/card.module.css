@@ -2,11 +2,6 @@
   padding: 0 50px 0 50px;
 }
 
-.avatar {
-  width: 50%;
-  padding: 30px;
-}
-
 .infor {
   display: flex;
   align-items: center;
@@ -33,4 +28,163 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone > p {
+  visibility: hidden;
+  margin-bottom: 0px;
+}
+
+.phone:hover > p {
+  visibility: inherit;
+}
+
+.avatar {
+  width: 50%;
+  padding: 10px;
+}
+
+/*  width < 320px*/
+@media only screen and (max-width: 320px) {
+  .name {
+    font-size: 1em;
+  }
+
+  .role {
+    font-size: 0.7em;
+  }
+
+  .des {
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card_body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*  350px < width < 400px*/
+@media only screen and (min-width: 350px) {
+  .name {
+    font-size: 1em;
+  }
+
+  .role {
+    font-size: 0.7em;
+  }
+
+  .des {
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card_body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 400px < width < 599px*/
+@media only screen and (min-width: 400px) {
+  .name {
+    font-size: 1em;
+  }
+
+  .role {
+    font-size: 0.7em;
+  }
+
+  .des {
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card_body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 599px < width < 1300 */
+@media only screen and (min-width: 599px) {
+  .name {
+    font-size: 1.5em;
+  }
+
+  .role {
+    font-size: 1em;
+  }
+
+  .des {
+    font-size: 1em;
+    padding-right: 5px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card_body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* 1300px < width */
+@media only screen and (min-width: 1300px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .role {
+    font-size: 1em;
+  }
+
+  .des {
+    font-size: 1em;
+    padding-right: 5px;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card_body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .avatar {
+    margin: 30px;
+  }
 }

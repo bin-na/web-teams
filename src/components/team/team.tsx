@@ -19,7 +19,7 @@ export const Team = (props: Props): React.ReactElement => (
                 <Card user={item} />
               </Col>
             )}
-            <Image src={item.meme}></Image>
+            <Image className="meme" src={item.meme} alt="meme"></Image>
             {index % 2 === 1 && (
               <Col className="ani2" md>
                 <Card user={item} />

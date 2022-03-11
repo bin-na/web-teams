@@ -18,9 +18,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         id: 'binh_na',
         name: 'Nguyễn An Bình',
         role: 'Frontend Developer',
-        description: 'Bình thích màu hồng và pê tê',
+        description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
-        meme: "meme/meme2.png",
+        meme: 'meme/meme2.png',
         phone: '0984707504'
       },
       {
@@ -29,7 +29,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         role: 'Frontend Internship',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
-        meme: "meme/meme1.png",
+        meme: 'meme/meme1.png',
         phone: '0984707504'
       },
       
@@ -39,7 +39,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         role: 'Frontend Internship',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
-        meme: "meme/meme3.png",
+        meme: 'meme/meme3.png',
         phone: '0984707504'
       },
       {
@@ -48,7 +48,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Respon
         role: 'Frontend Internship',
         description: 'Bình thích màu hồng nhưng hem pê tê',
         old: 25,
-        meme: "meme/meme4.png",
+        meme: 'meme/meme4.png',
         phone: '0984707504'
       },
     ];

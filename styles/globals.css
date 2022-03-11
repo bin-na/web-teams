@@ -16,14 +16,6 @@ a {
   box-sizing: border-box;
 }
 
-.hi-team {
-  color: rgb(53, 27, 82);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 4em;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-
 .icons {
   padding: 0 30px 0 30px;
 }
@@ -33,7 +25,15 @@ a {
   padding: 0;
   width: 100%;
   height: 140vh;
-  background-color: rgb(179, 191, 202);
+  background-color: rgb(233, 237, 241);
+}
+
+.hi-team {
+  color: rgb(53, 27, 82);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4em;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .boundary-card {
@@ -46,47 +46,406 @@ a {
 }
 
 .ani1 {
-  animation: ani1 6s infinite;
+  animation: ani1 0.3s forwards;
 }
 
 @keyframes ani1 {
   0% {
-    transform: translate(400px, 0px);
-  }
-  50% {
     transform: translate(0px, 0px);
   }
   100% {
-    transform: translate(400px, 0px);
+    transform: translate(-100px, 0px);
   }
 }
 
 .ani2 {
-  animation: ani2 6s infinite;
+  animation: ani2 0.3s forwards;
 }
 
 @keyframes ani2 {
-  0% {
-    transform: translate(-400px, 0px);
+  from {
+    transform: translate(0px, 0px);
   }
-  50% {
+  to {
     transform: translate(200px, 0px);
   }
-  100% {
-    transform: translate(-400px, 0px);
-  }
-}
-
-.ani1:hover {
-  animation-play-state: paused;
-}
-
-.ani2:hover {
-  animation-play-state: paused;
 }
 
 .phone {
   z-index: 3;
   position: absolute;
   margin-left: 80px;
+}
+
+/*  width < 320px */
+@media only screen and (max-width: 320px) {
+  .meme {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container {
+    height: 100px;
+  }
+
+  .hi-team {
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    padding: 0 10px 0 10px;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(40px, 0px);
+    }
+    100% {
+      transform: translate(10px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-30px, 0px);
+    }
+    to {
+      transform: translate(5px, 0px);
+    }
+  }
+
+  .outside-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg {
+    height: 130vh;
+  }
+}
+
+/* 350px < width < 400px */
+
+@media only screen and (min-width: 350px) {
+  .meme {
+    width: 70px;
+    height: 70px;
+  }
+
+  .container {
+    height: 100px;
+  }
+
+  .hi-team {
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    padding: 0 10px 0 10px;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(80px, 0px);
+    }
+    100% {
+      transform: translate(10px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-50px, 0px);
+    }
+    to {
+      transform: translate(20px, 0px);
+    }
+  }
+
+  .outside-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg {
+    height: 110vh;
+  }
+}
+
+/* 400px < width < 500px */
+@media only screen and (min-width: 400px) {
+  .meme {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container {
+    height: 100px;
+  }
+
+  .hi-team {
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    padding: 0 10px 0 10px;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(80px, 0px);
+    }
+    100% {
+      transform: translate(20px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-50px, 0px);
+    }
+    to {
+      transform: translate(40px, 0px);
+    }
+  }
+}
+
+/* 400px < width < 500px */
+
+@media only screen and (min-width: 500px) {
+  .meme {
+    width: 90px;
+    height: 90px;
+  }
+
+  .container {
+    height: 100px;
+  }
+
+  .hi-team {
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    padding: 0 10px 0 10px;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(80px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-50px, 0px);
+    }
+    to {
+      transform: translate(30px, 0px);
+    }
+  }
+
+  .outside-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg {
+    height: 100vh;
+  }
+
+  .boundary-card {
+    width: 95%;
+  }
+}
+
+/* 750px < height  */
+
+@media only screen and (min-height: 750px) {
+  .hi-team {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bg {
+    height: 100vh;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(80px, 0px);
+    }
+    100% {
+      transform: translate(10px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-50px, 0px);
+    }
+    to {
+      transform: translate(35px, 0px);
+    }
+  }
+}
+/* 599px < width < 750px */
+@media only screen and (min-width: 599px) {
+  .bg {
+    height: 115vh;
+  }
+
+  .meme {
+    margin: 0 50px;
+  }
+
+  .boundary-card {
+    width: 100%;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(150px, 0px);
+    }
+    100% {
+      transform: translate(-10px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-150px, 0px);
+    }
+    to {
+      transform: translate(10px, 0px);
+    }
+  }
+}
+
+/* 750px < width < 800px */
+@media only screen and (min-width: 750px) {
+  .hi-team {
+    font-size: 4em;
+  }
+  .bg {
+    height: 130vh;
+  }
+}
+/* 800px < width < 1300px */
+@media only screen and (min-width: 800px) {
+  .bg {
+    height: 100vh;
+  }
+  .boundary-card {
+    width: 100%;
+  }
+  .meme {
+    width: 120px;
+    height: 120px;
+  }
+  .hi-team {
+    font-size: 4em;
+  }
+}
+
+/* 1300px < width < 1500px */
+@media only screen and (min-width: 1300px) {
+  .hi-team {
+    font-size: 5em;
+  }
+  .bg {
+    height: 190vh;
+  }
+
+  .meme {
+    margin: 0 50px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .boundary-card {
+    width: 100%;
+  }
+
+  @keyframes ani1 {
+    0% {
+      transform: translate(300px, 0px);
+    }
+    100% {
+      transform: translate(-100px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-350px, 0px);
+    }
+    to {
+      transform: translate(100px, 0px);
+    }
+  }
+}
+
+/* 1500px < width */
+@media only screen and (min-width: 1500px) {
+  @keyframes ani1 {
+    0% {
+      transform: translate(500px, 0px);
+    }
+    100% {
+      transform: translate(-250px, 0px);
+    }
+  }
+
+  .ani2 {
+    animation: ani2 0.3s forwards;
+  }
+
+  @keyframes ani2 {
+    from {
+      transform: translate(-500px, 0px);
+    }
+    to {
+      transform: translate(250px, 0px);
+    }
+  }
 }
