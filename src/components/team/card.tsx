@@ -9,15 +9,18 @@ interface Props {
 export const Card = (props: Props) => {
   const memberInfo = props.cardInfo;
   const [isRun, setIsRun] = React.useState<any>(props.runAnimation ? props.runAnimation : null);
+
   const handleRunAnimation = () => {
     setTimeout(() => {
       console.log(isRun);
       setIsRun(false);
     }, 700);
   };
+
   React.useEffect(() => {
     handleRunAnimation();
   }, []);
+
   return props.runAnimation ? (
     <div className={isRun ? styles.wrapper + ' ' + styles.initAnimation : styles.wrapper + ' ' + styles.runAnimation}>
       <div className={styles.cardContainer}>
@@ -34,11 +37,9 @@ export const Card = (props: Props) => {
             <div className={styles.icon}>
               <img src="/img/facebook.png" />
             </div>
-
             <div className={styles.icon}>
               <img src="/img/instagram.png" />
             </div>
-
             <div className={styles.icon}>
               <img src="/img/twitter.png" />
             </div>
