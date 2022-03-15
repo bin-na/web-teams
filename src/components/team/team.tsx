@@ -2,6 +2,7 @@ import React from 'react';
 import { User } from './interface';
 import styles from './cardGroup.module.scss';
 import { Card } from './card';
+
 export interface Props {
   users: User[];
 }
@@ -26,7 +27,7 @@ export const Team = (props: Props) => {
                 <img src={item.icon} />
               </div>
             </div>
-            <Card key={index} cardInfo={item} />
+            <Card key={index} cardInfo={item} runAnimation={null} />
           </div>
         );
       })}

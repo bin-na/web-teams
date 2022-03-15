@@ -4,7 +4,7 @@ import styles from './memberCard.module.scss';
 
 interface Props {
   cardInfo: User;
-  runAnimation: boolean;
+  runAnimation: any;
 }
 export const Card = (props: Props) => {
   const memberInfo = props.cardInfo;
