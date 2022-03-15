@@ -6,6 +6,7 @@ interface Props {
   cardInfo: User;
   runAnimation: any;
 }
+
 export const Card = (props: Props) => {
   const memberInfo = props.cardInfo;
   const [isRun, setIsRun] = React.useState<any>(props.runAnimation ? props.runAnimation : null);
@@ -36,12 +37,12 @@ export const Card = (props: Props) => {
           <div className={styles.iconGroup}>
             <div className={styles.icon}>
               <img src="/img/facebook.png" />
-            </div>
-            <div className={styles.icon}>
-              <img src="/img/instagram.png" />
-            </div>
-            <div className={styles.icon}>
-              <img src="/img/twitter.png" />
+              <div className={styles.icon}>
+                <img src="/img/instagram.png" />
+              </div>
+              <div className={styles.icon}>
+                <img src="/img/twitter.png" />
+              </div>
             </div>
           </div>
         </div>
