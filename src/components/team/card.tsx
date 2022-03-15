@@ -63,7 +63,7 @@ export const Card = (props: Props) => {
             <div className={styles.icon}>
               <img src="/img/facebook.png" />
             </div>
-
+            <span></span>
             <div className={styles.icon}>
               <img src="/img/instagram.png" />
             </div>
