@@ -27,7 +27,7 @@ export const Team = (props: Props) => {
                 <img src={item.icon} />
               </div>
             </div>
-            <Card key={index} cardInfo={item} runAnimation={null} />
+            <Card key={index} cardInfo={item} runAnimation={false} />
           </div>
         );
       })}

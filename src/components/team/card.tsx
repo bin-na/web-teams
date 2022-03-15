@@ -4,12 +4,12 @@ import styles from './memberCard.module.scss';
 
 interface Props {
   cardInfo: User;
-  runAnimation: any;
+  runAnimation: boolean;
 }
 
 export const Card = (props: Props) => {
   const memberInfo = props.cardInfo;
-  const [isRun, setIsRun] = React.useState<any>(props.runAnimation ? props.runAnimation : null);
+  const [isRun, setIsRun] = React.useState<any>(props.runAnimation);
 
   const handleRunAnimation = () => {
     setTimeout(() => {
